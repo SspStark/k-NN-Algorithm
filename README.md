@@ -24,3 +24,27 @@ Understanding the Data
 - In preprocessing step the color of images may be different colors but to make it easier to train the machine the images are converted to black & white images.
 - In greyscale the value 0 is pitch black and the value 255 is white, based on the values the shade will change.
 - The machine will take this image as matrix with values of greyscale.
+
+There are many classification algorithms to work on this project and k-NN is one of them.
+
+## k-NN Algorithm
+The k-Nearest Neighbors (k-NN) algorithm is a simple and intuitive supervised machine learning algorithm used for classification and regression tasks. In the context of classification, it falls under the category of instance-based learning.
+### k-NN for Classification:
+Data Representation
+- The algorithm relies on a dataset where each data point is represented by a set of features.
+
+Nearest Neighbors:
+- To classify a new data point, the algorithm identifies the k training data points in the dataset that are closest to the new point based on a distance metric (commonly Euclidean distance).
+
+Majority Voting:
+- For classification, the algorithm assigns the class label that is most frequent among the k-nearest neighbors to the new data point. This is often referred to as majority voting.
+
+Choosing k:
+- The choice of the parameter k (the number of neighbors) is a crucial aspect. A smaller k can lead to more sensitive models, while a larger k can make the model more robust but potentially less sensitive to local variations.
+
+Considerations:
+- The choice of the parameter k is critical and can significantly impact the model's performance.
+- The algorithm's sensitivity to the choice of distance metric and k requires careful tuning for optimal results.
+- While k-NN is simple and interpretable, it may not perform well in high-dimensional spaces or with large datasets.
+
+k-NN is a non-parametric, lazy learning algorithm, meaning it does not make strong assumptions about the underlying data distribution and postpones learning until prediction time. It is straightforward to implement and understand, making it a useful algorithm for certain types of problems, especially in smaller datasets.
