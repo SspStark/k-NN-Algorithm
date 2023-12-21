@@ -42,9 +42,19 @@ Majority Voting:
 Choosing k:
 - The choice of the parameter k (the number of neighbors) is a crucial aspect. A smaller k can lead to more sensitive models, while a larger k can make the model more robust but potentially less sensitive to local variations.
 
+For a new input:
+- Compute the distance of the new input to all inputs.
+- Sort the data based on the distance.
+- Choose the majority among k nearest data.
+
 Considerations:
 - The choice of the parameter k is critical and can significantly impact the model's performance.
 - The algorithm's sensitivity to the choice of distance metric and k requires careful tuning for optimal results.
-- While k-NN is simple and interpretable, it may not perform well in high-dimensional spaces or with large datasets.
+- While k-NN is simple, it may not perform well in high-dimensional spaces or with large datasets.
 
 k-NN is a non-parametric, lazy learning algorithm, meaning it does not make strong assumptions about the underlying data distribution and postpones learning until prediction time. It is straightforward to implement and understand, making it a useful algorithm for certain types of problems, especially in smaller datasets.
+
+**Euclidean Distance**: Vector Notation
+- position can also be represented as a 2D vector, [a1,a2] & [b1,b2]
+- squareroot((a1-b1)^2 + (a2-b2)^2)
+
