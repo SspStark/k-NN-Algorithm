@@ -25,6 +25,11 @@ Understanding the Data
 - In greyscale the value 0 is pitch black and the value 255 is white, based on the values the shade will change.
 - The machine will take this image as matrix with values of greyscale.
 
+## Computer Vision
+Enabling computers to understand the content of digital images or videos. In order to search images or videos, computers needs to know what the image or video contains.
+- Ex: Object Detection, Face Recognition, Image Classification, Feature Matching
+- steps in computer vision: 1.Acquiring Image, 2.Processing the Image, 3.Understanding the Image.
+
 There are many classification algorithms to work on this project and k-NN is one of them.
 
 ## k-NN Algorithm
