@@ -35,6 +35,7 @@ Data Representation
 
 Nearest Neighbors:
 - To classify a new data point, the algorithm identifies the k training data points in the dataset that are closest to the new point based on a distance metric (commonly Euclidean distance).
+- We choose the most frequent target label among the target labels of the k nearest points.
 
 Majority Voting:
 - For classification, the algorithm assigns the class label that is most frequent among the k-nearest neighbors to the new data point. This is often referred to as majority voting.
