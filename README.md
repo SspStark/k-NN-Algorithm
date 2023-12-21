@@ -6,8 +6,8 @@ Domain Problem: Digit Recognition
 - Ex: Google Lens
 
 Humans can perform any task with ease, but can't describe(step-by-step) how they are doing it!
-- Ex: Car Driving, Image Classification, Face Recognization and many more....\
-But Machines can't do this easily like humans do, so with Supervised learning by giving Labeled data, which is a supervision to a machine will achive this ability to recognize and perform tasks by their own.
+- Ex: Car Driving, Image Classification, Face Recognization and many more....
+- But Machines can't do this easily like humans do, so with Supervised learning by giving Labeled data, which is a supervision to a machine will achive this ability to recognize and perform tasks by their own.
 
 This Handwritten Digit Recognization comes under Classification Supervised Learning, because
 - Discrete valued target
