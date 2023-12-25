@@ -76,17 +76,19 @@ Distance Tie
 Voting Tie
 - suppose we sorted the nearest neighbours based on distance and k=4 so in those 4 we need consider majority ones but we got 2 same and other 2 same now the majority is same.
 - To break this tie we have *Weighted Voting*, nearby training examples can be given higher weightage `weight inversely proportional to 1/euclidean distance`
-
-We have a variant of k-NN which is called **Distance Weighted k-NN**, Weighted voting can be used even when there are no ties.
+- We have a variant of k-NN which is called **Distance Weighted k-NN**, Weighted voting can be used even when there are no ties.
+- other methods are Choosing the target label which has the majority in the entire training set (or) keep decreasing k upto 1 till the tie breaks.
 
 Voronoi Cells
 - let's say k=1, each training example(point) has a small area surrounding it.
 - Any new input in this area will be predicted as the target label of the training example,that area is called *voronoi cell*
 - All the training examples have a voronoi cell around them formimg a complex shape is called **Voronoi Tessellation**
+- A set of all points that are closest to the instance than to any other instance in the training set.
+- The boundary b/w voronoi cells in the voronoi tessellation is a set of points which are equidistant from 2 different training examples.
 ### Performance Metrics
 In prediction we can have 4 scenarios 1.True Positive, True Negetive, False Positive and False Negative.
 
 Calculating Performance
 - Accuracy = (TP + TN)/(TP + TN + FP + FN)
-- Recall: Here we only consider the actual positives and we find how many of these actual positives we are predicting as positives. TP/(TP + FN)
-- Precision: Here we consider all the positive prediction and find the acctual positives. TP/(TP + FP)
+- Recall: Here we only consider the actual positives and we find how many of these actual positives we are predicting as positives. TP/(TP + FN), The ratio of true positives and the total number of actual positive instances.
+- Precision: Here we consider all the positive prediction and find the actual positives. TP/(TP + FP), The ratio of true positives and the total number of instances which are predicted as positives.
