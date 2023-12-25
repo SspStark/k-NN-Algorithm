@@ -83,3 +83,10 @@ Voronoi Cells
 - let's say k=1, each training example(point) has a small area surrounding it.
 - Any new input in this area will be predicted as the target label of the training example,that area is called *voronoi cell*
 - All the training examples have a voronoi cell around them formimg a complex shape is called **Voronoi Tessellation**
+### Performance Metrics
+In prediction we can have 4 scenarios 1.True Positive, True Negetive, False Positive and False Negative.
+
+Calculating Performance
+- Accuracy = (TP + TN)/(TP + TN + FP + FN)
+- Recall: Here we only consider the actual positives and we find how many of these actual positives we are predicting as positives. TP/(TP + FN)
+- Precision: Here we consider all the positive prediction and find the acctual positives. TP/(TP + FP)
