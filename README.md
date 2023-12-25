@@ -13,7 +13,7 @@ This Handwritten Digit Recognization comes under Classification Supervised Learn
 - Discrete valued target
 - Target values: 0,1,2,3,4,5,6,7,8,9
 
-ML Problem: Making ML Softwrae to recognize digits or numbers from the given image by training it with labeled data of numbers.
+ML Problem: Making ML Software to recognize digits or numbers from the given image by training it with labeled data of numbers.
 
 Data Collection
 - To acquire the labeled data for this project we can use MNIST Dataset or it's new version EMNIST Dataset which contains 240,000 training images and 40,000 testing images because every user will write numbers differently so we need different types of habdwriting images of numbers.
