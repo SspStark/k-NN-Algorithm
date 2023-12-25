@@ -16,7 +16,7 @@ This Handwritten Digit Recognization comes under Classification Supervised Learn
 ML Problem: Making ML Software to recognize digits or numbers from the given image by training it with labeled data of numbers.
 
 Data Collection
-- To acquire the labeled data for this project we can use MNIST Dataset or it's new version EMNIST Dataset which contains 240,000 training images and 40,000 testing images because every user will write numbers differently so we need different types of habdwriting images of numbers.
+- To acquire the labeled data for this project we can use MNIST Dataset or it's new version EMNIST Dataset which contains 240,000 training images and 40,000 testing images because every user will write numbers differently so we need different types of handwriting images of numbers.
 
 Understanding the Data
 - The Data contains greyscale images and corresponding labels.
@@ -47,6 +47,8 @@ Majority Voting:
 
 Choosing k:
 - The choice of the parameter k (the number of neighbors) is a crucial aspect. A smaller k can lead to more sensitive models, while a larger k can make the model more robust but potentially less sensitive to local variations.
+- So k value should not be very small and should not be very large.
+- k is a Hyperparameter, to choose the k at first we take a random value, by tuning and based on Performance Metric we choose the k value.
 
 For a new input:
 - Compute the distance of the new input to all inputs.
@@ -61,6 +63,23 @@ Considerations:
 k-NN is a non-parametric, lazy learning algorithm, meaning it does not make strong assumptions about the underlying data distribution and postpones learning until prediction time. It is straightforward to implement and understand, making it a useful algorithm for certain types of problems, especially in smaller datasets.
 
 **Euclidean Distance**: Vector Notation
-- position can also be represented as a 2D vector, [a1,a2] & [b1,b2]
-- squareroot((a1-b1)^2 + (a2-b2)^2)
+- position can also be represented as a nD vector, [a1,a2,....,an] , [b1,b2,....,bn]
+- squareroot((a1-b1)^2 + (a2-b2)^2+........+(an-bn)^2)
 
+When we are sorting the data with k-NN we can get Distance Ties and Voting Ties then we have to break these ties.
+
+Distance Tie
+- When sorting the data suppose k=4 and we have to consider 4 nearest neighbours but the 4th and 5th point distance is same.
+- To break this tie we can go with random choosing.
+- Other way is instead of choosing randomly, consider all the points which are equidistant from the test input.
+
+Voting Tie
+- suppose we sorted the nearest neighbours based on distance and k=4 so in those 4 we need consider majority ones but we got 2 same and other 2 same now the majority is same.
+- To break this tie we have *Weighted Voting*, nearby training examples can be given higher weightage `weight inversely proportional to 1/euclidean distance`
+
+We have a variant of k-NN which is called **Distance Weighted k-NN**, Weighted voting can be used even when there are no ties.
+
+Voronoi Cells
+- let's say k=1, each training example(point) has a small area surrounding it.
+- Any new input in this area will be predicted as the target label of the training example,that area is called *voronoi cell*
+- All the training examples have a voronoi cell around them formimg a complex shape is called **Voronoi Tessellation**
