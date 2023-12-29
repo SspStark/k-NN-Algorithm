@@ -92,3 +92,4 @@ Calculating Performance
 - Accuracy = (TP + TN)/(TP + TN + FP + FN)
 - Recall: Here we only consider the actual positives and we find how many of these actual positives we are predicting as positives. TP/(TP + FN), The ratio of true positives and the total number of actual positive instances.
 - Precision: Here we consider all the positive prediction and find the actual positives. TP/(TP + FP), The ratio of true positives and the total number of instances which are predicted as positives.
+- F1 Score: It balance both Recall and Precision, 2PR/P+R
