@@ -93,3 +93,7 @@ Calculating Performance
 - Recall: Here we only consider the actual positives and we find how many of these actual positives we are predicting as positives. TP/(TP + FN), The ratio of true positives and the total number of actual positive instances.
 - Precision: Here we consider all the positive prediction and find the actual positives. TP/(TP + FP), The ratio of true positives and the total number of instances which are predicted as positives.
 - F1 Score: It balance both Recall and Precision, 2PR/P+R
+- Macro-average for Muiti-class Metrics is average of F1 Scores
+- We use Macro-average when a particular class is important than other.
+- We use Weighted-average when the classes are imbalanced and all have equal importance.
+- We use Micro-average when we have to predict multiple targets with multiple labels scenario.
