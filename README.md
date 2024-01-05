@@ -99,3 +99,20 @@ Calculating Performance
 - We use Weighted-average when the classes are imbalanced and all have equal importance.
 - We use Micro-average when we have to predict multiple targets with multiple labels scenario.
 - When we use Micro-average to predict single target with single label scenario the FP and FN will be same which makes precision, recall and F1 score same.
+
+Prediction on New Inputs
+- For a 28 x 28 pixel image the possible inputs are 256^(28 x 28) can be given to the model, for a color image it will be 256^(28 x 28 x 3) because color images have RGB.
+- For a 512 x 512, the size of the input space is 256^(512 X 512).In this large space we have portion of data called Population.
+- The Population is the collection of all items of interest to our ML problem, which in the case of a Handwritten Digit Recognition, is the images of every single individual handwritten digit images across the globe.
+- Since the training data cannot contain the images of every handwritten, it should be a representative sample of the Population.
+- The Representative sample is a subset of the population that accurately reflects the members of the entire population.
+
+Splitting the prepared data for ML into training data, validation data, testing data.
+- For a balanced data where the all different label examples are equal then we use Random Shuffle Split.
+- For a Imbalanced data we use Stratified Shuffle Split.
+
+No Free Lunch Theorem
+- In order to make predictions, we have to make some assumptions about data.
+- There will always be a dataset which violates these assumptions.
+- Different algorithms make very different assumptions.
+- There is NO **one best algorithm**.
