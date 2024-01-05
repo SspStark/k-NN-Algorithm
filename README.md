@@ -60,6 +60,8 @@ Considerations:
 - The choice of the parameter k is critical and can significantly impact the model's performance.
 - The algorithm's sensitivity to the choice of distance metric and k requires careful tuning for optimal results.
 - While k-NN is simple, it may not perform well in high-dimensional spaces or with large datasets.
+- In very high dimentional spaces, almost all the points are far away from each other.
+- The Dimentionality increases the probability of a point falling in middle decreases.
 
 k-NN is a non-parametric, lazy learning algorithm, meaning it does not make strong assumptions about the underlying data distribution and postpones learning until prediction time. It is straightforward to implement and understand, making it a useful algorithm for certain types of problems, especially in smaller datasets.
 
@@ -116,3 +118,7 @@ No Free Lunch Theorem
 - There will always be a dataset which violates these assumptions.
 - Different algorithms make very different assumptions.
 - There is NO **one best algorithm**.
+
+k-NN Assumption
+- Similar points have same labels
+- Two points are similar, if they are close to each other(distance b/w them is less)
