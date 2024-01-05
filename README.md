@@ -56,6 +56,7 @@ For a new input:
 - Choose the majority among k nearest data.
 
 Considerations:
+- k-NN Model doesn't learn any complicated mathematical models, Just memorizes the training data.
 - The choice of the parameter k is critical and can significantly impact the model's performance.
 - The algorithm's sensitivity to the choice of distance metric and k requires careful tuning for optimal results.
 - While k-NN is simple, it may not perform well in high-dimensional spaces or with large datasets.
