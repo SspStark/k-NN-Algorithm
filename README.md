@@ -122,3 +122,24 @@ No Free Lunch Theorem
 k-NN Assumption
 - Similar points have same labels
 - Two points are similar, if they are close to each other(distance b/w them is less)
+
+Distance Measures
+- In high Dimensional spaces Euclidean Distance is not preferable based on researches done by ML researchers.
+- There are other ways of measuring distances b/w points to get better results, one is **Manhattan** distance.
+- Manhattan distance: a=[a1,a2,....an] & b=[b1,b2....bn] ==> |a1-b1|+|a2-b2|+....+|an-bn|
+- others distance measures are *Minkowski or L^n Norm, Chebyshev* etc.
+
+Notation
+- notation refers to a system of symbols and rules used to represent information or communicate ideas. It's a way of expressing complex concepts or structures using a set of symbols or characters. It makes the communication and understanding easy.
+- "m" refers to number of training examples or rows
+- "n" refers to numbers of features or columns
+- x - input here x is a vector, y - output
+- Dataset D={(x^[m],y[m])}, here x^[m] is feature vector and y[m] is label.
+- X - input space, R - real number ==> X=R^n, f(vector x)=y - Unknown target function, h~f - Hypothesis function
+- xn^[m] - m is written in superscript and n is written in subscript
+
+Data Terminology
+- Example: observation, record, instance, sample
+- Feature: variable, attribute, dimension, predictor, covariate
+- Target: output, outcome, label/class(classification), ground truth
+- Prediction: Output from Model
