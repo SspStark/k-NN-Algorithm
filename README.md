@@ -125,15 +125,19 @@ k-NN Assumption
 
 Distance Measures
 - In high Dimensional spaces Euclidean Distance is not preferable based on researches done by ML researchers.
-- There are other ways of measuring distances b/w points to get better results, one is **Manhattan** distance.
+- There are other ways of measuring distances b/w points to get better results, one is **Manhattan** or **L^1 Norm** distance.
 - Manhattan distance: a=[a1,a2,....an] & b=[b1,b2....bn] ==> |a1-b1|+|a2-b2|+....+|an-bn|
 - others distance measures are *Minkowski or L^n Norm, Chebyshev* etc.
+- Minkowski distance: nth root(sum(differences b/w corressponding points of a & b vectors ^ n))
+- when n=1, it will become manhattan distance and n=2, it will become Euclidean distance.
+- when n is infinity, it will become **Chebyshev Distance**
+- Chebyshev distance: max value(differences of corressponding points of a & b vectors)
 
 Notation
 - notation refers to a system of symbols and rules used to represent information or communicate ideas. It's a way of expressing complex concepts or structures using a set of symbols or characters. It makes the communication and understanding easy.
 - "m" refers to number of training examples or rows
 - "n" refers to numbers of features or columns
-- x - input here x is a vector, y - output
+- x - input, here x is a vector and y - output
 - Dataset D={(x^[m],y[m])}, here x^[m] is feature vector and y[m] is label.
 - X - input space, R - real number ==> X=R^n, f(vector x)=y - Unknown target function, h~f - Hypothesis function
 - xn^[m] - m is written in superscript and n is written in subscript
