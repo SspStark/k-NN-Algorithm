@@ -34,6 +34,9 @@ For this project we need a classification algorithm and There are many classific
 - k-NN, Logistic Regression, SVM, Decision Trees, Neural Networks .............
 ## k-NN Algorithm
 The k-Nearest Neighbors (k-NN) algorithm is a simple and intuitive supervised machine learning algorithm used for classification and regression tasks. In the context of classification, it falls under the category of instance-based learning.
+
+k-NN Simply represents that we are predecting the result based on nearest neighbours and k represents how many nearest neighbours we should consider.
+- Eg:- Saying "Show me your friends and I'll tell you what kind of person you are".
 ### k-NN for Classification:
 Data Representation
 - The algorithm relies on a dataset where each data point is represented by a set of features.
