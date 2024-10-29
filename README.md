@@ -5,7 +5,7 @@ Domain Problem: Digit Recognition
 - Subproblem: Recognize handwritten digits
 - Ex: Google Lens
 
-Humans can perform any task with ease, but can't describe(step-by-step) how they are doing it!
+Humans can perform any task with ease, but can't describe (step-by-step) how they are doing it!
 - Ex: Car Driving, Image Classification, Face Recognization and many more....
 - But Machines can't do this easily like humans do, so with Supervised learning by giving Labeled data, which is a supervision to a machine will achive this ability to recognize and perform tasks by their own.
 
@@ -16,9 +16,9 @@ This Handwritten Digit Recognization comes under Classification Supervised Learn
 ML Problem: Making ML Software to recognize digits or numbers from the given image by training it with labeled data of numbers.
 
 Data Collection
-- To acquire the labeled data for this project we can use MNIST Dataset or it's new version EMNIST Dataset which contains 240,000 training images and 40,000 testing images because every user will write numbers differently so we need different types of handwriting images of numbers.
+- To acquire the labeled data for this project we can use the data from the websites MNIST Dataset or it's new version EMNIST Dataset which contains 240,000 training images and 40,000 testing images because every user will write numbers differently so we need different types of handwriting images of numbers.
 
-Understanding the Data
+Understanding the Data from MNIST Dataset
 - The Data contains greyscale images and corresponding labels.
 - Image size: 28 x 28 pixels.
 - In preprocessing step the color of images may be different colors but to make it easier to train the machine the images are converted to black & white images.
@@ -30,8 +30,8 @@ Enabling computers to understand the content of digital images or videos. In ord
 - Ex: Object Detection, Face Recognition, Image Classification, Feature Matching
 - steps in computer vision: 1.Acquiring Image, 2.Processing the Image, 3.Understanding the Image.
 
-There are many classification algorithms to work on this project and k-NN is one of them.
-
+For this project we need a classification algorithm and There are many classification algorithms.
+- k-NN, Logistic Regression, SVM, Decision Trees, Neural Networks .............
 ## k-NN Algorithm
 The k-Nearest Neighbors (k-NN) algorithm is a simple and intuitive supervised machine learning algorithm used for classification and regression tasks. In the context of classification, it falls under the category of instance-based learning.
 ### k-NN for Classification:
