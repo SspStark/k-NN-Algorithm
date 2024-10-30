@@ -90,6 +90,7 @@ Voronoi Cells
 - Any new input in this area will be predicted as the target label of the training example,that area is called *voronoi cell*
 - All the training examples have a voronoi cell around them formimg a complex shape is called **Voronoi Tessellation** and the boundary separating the voronoi cells of 2 classes for 1-NN is called **Decision Boundary**.
 - A set of all points that are closest to the instance than to any other instance in the training set.
+- A minor change in the training data changes the decision boundary drastically.
 - The boundary b/w voronoi cells in the voronoi tessellation is a set of points which are equidistant from 2 different training examples.
 ### Performance Metrics
 In prediction we can have 4 scenarios 1.True Positive, True Negetive, False Positive and False Negative.
