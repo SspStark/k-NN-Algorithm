@@ -45,18 +45,22 @@ Nearest Neighbors:
 - To classify a new data point, the algorithm identifies the k training data points in the dataset that are closest to the new point based on a distance metric (commonly Euclidean distance).
 - We choose the most frequent target label among the target labels of the k nearest points.
 
+**Euclidean Distance**: Vector Notation
+- position can also be represented as a nD vector, [a1,a2,....,an] , [b1,b2,....,bn]
+- squareroot((a1-b1)^2 + (a2-b2)^2+........+(an-bn)^2)
+
 Majority Voting:
 - For classification, the algorithm assigns the class label that is most frequent among the k-nearest neighbors to the new data point. This is often referred to as majority voting.
-
-Choosing k:
-- The choice of the parameter k (the number of neighbors) is a crucial aspect. A smaller k can lead to more sensitive models, while a larger k can make the model more robust but potentially less sensitive to local variations.
-- So k value should not be very small and should not be very large.
-- k is a Hyperparameter, to choose the k at first we take a random value, by tuning and based on Performance Metric we choose the k value.
 
 For a new input:
 - Compute the distance of the new input to all inputs.
 - Sort the data based on the distance.
 - Choose the majority among k nearest data.
+
+Choosing k:
+- The choice of the parameter k (the number of neighbors) is a crucial aspect. A smaller k can lead to more sensitive models, while a larger k can make the model more robust but potentially less sensitive to local variations.
+- So k value should not be very small and should not be very large.
+- k is a Hyperparameter, to choose the k at first we take a random value, by tuning and based on Performance Metric we choose the k value.
 
 Considerations:
 - k-NN Model doesn't learn any complicated mathematical models, Just memorizes the training data.
@@ -67,10 +71,6 @@ Considerations:
 - The Dimentionality increases the probability of a point falling in middle decreases.
 
 k-NN is a non-parametric, lazy learning algorithm, meaning it does not make strong assumptions about the underlying data distribution and postpones learning until prediction time. It is straightforward to implement and understand, making it a useful algorithm for certain types of problems, especially in smaller datasets.
-
-**Euclidean Distance**: Vector Notation
-- position can also be represented as a nD vector, [a1,a2,....,an] , [b1,b2,....,bn]
-- squareroot((a1-b1)^2 + (a2-b2)^2+........+(an-bn)^2)
 
 When we are sorting the data with k-NN we can get Distance Ties and Voting Ties then we have to break these ties.
 
