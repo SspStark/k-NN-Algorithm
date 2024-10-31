@@ -94,6 +94,10 @@ Voronoi Cells
 - The boundary b/w voronoi cells in the voronoi tessellation is a set of points which are equidistant from 2 different training examples.
 ### Performance Metrics
 In prediction we can have 4 scenarios 1.True Positive, True Negetive, False Positive and False Negative.
+- TP: Actual positives which are predicted as positives.
+- FN: Actual positives which are predicted as negatives.
+- TN: Actual negatives which are predicted as negatives.
+- FP: Actual negatives which are predicted as positives.
 
 Calculating Performance
 - Accuracy = (TP + TN)/(TP + TN + FP + FN)
