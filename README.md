@@ -145,7 +145,7 @@ Notation
 - notation refers to a system of symbols and rules used to represent information or communicate ideas. It's a way of expressing complex concepts or structures using a set of symbols or characters. It makes the communication and understanding easy.
 - "m" refers to number of training examples or rows
 - "n" refers to numbers of features or columns
-- x - input, here x is a vector and y - output
+- x - inputs, here x is a vector and y - output
 - Dataset D={(x^[m],y[m])}, here x^[m] is feature vector and y[m] is label.
 - X - input space, R - real number ==> X=R^n, f(vector x)=y - Unknown target function, h~f - Hypothesis function
 - xn^[m] - m is written in superscript and n is written in subscript
