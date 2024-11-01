@@ -136,10 +136,10 @@ Distance Measures
 - There are other ways of measuring distances b/w points to get better results, one is **Manhattan** or **L^1 Norm** distance.
 - Manhattan distance: a=[a1,a2,....an] & b=[b1,b2....bn] ==> |a1-b1|+|a2-b2|+....+|an-bn|
 - others distance measures are *Minkowski or L^n Norm, Chebyshev* etc.
-- Minkowski distance: nth root(sum(differences b/w corressponding points of a & b vectors ^ n))
+- Minkowski distance: nth root(sum(|ai-bi| ^ n))
 - when n=1, it will become manhattan distance and n=2, it will become Euclidean distance.
 - when n is infinity, it will become **Chebyshev Distance**
-- Chebyshev distance: max value(differences of corressponding points of a & b vectors)
+- Chebyshev distance: max value(differences of corressponding points of a & b vectors: |ai-bi|)
 
 Notation
 - notation refers to a system of symbols and rules used to represent information or communicate ideas. It's a way of expressing complex concepts or structures using a set of symbols or characters. It makes the communication and understanding easy.
