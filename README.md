@@ -162,5 +162,15 @@ Data Terminology
 - [Applying k-NN to MNIST Dataset](https://colab.research.google.com/drive/1pHgIFlAvUPpQoxLciLvho18g1snFy29K#scrollTo=G-boAKvZkKRJ)
 
 ### Improving the Performance of k-NN
-Computational Complexity - Naive k-NN
-Improving Computational Performance of k-NN with Data Structures based on memory and time taken for an algorithm.
+Computational Complexity - Naive k-NN.\
+Improving Computational Performance of k-NN with Data Structures based on memory and time taken for an algorithm. Dividing the dataset upfront to speed-up the distance computation.
+- Bucketing, KD Trees, Ball Trees, Locality Sensitive Hashing (LSH).\
+Dimensionality Reduction: Transforming the data into a low-dimensional space without losing meaningful properties of the original data.
+- Feature Extraction(Projection)
+- Feature Selection
+- Editing/ Pruning
+- Creating Prototypes.\
+Predictive Performance: The predictive performance of a k-NN model depends on several factors including.
+- The right value of k
+- Distance Measures
+- Scaling Features
