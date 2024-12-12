@@ -161,3 +161,6 @@ Data Terminology
 - [Handwritten Digit Recognition using k-NN Solution](https://colab.research.google.com/drive/16_2O4dzRshPCYu5QHIh3zEGTWNhbNBU9)
 - [Applying k-NN to MNIST Dataset](https://colab.research.google.com/drive/1pHgIFlAvUPpQoxLciLvho18g1snFy29K#scrollTo=G-boAKvZkKRJ)
 
+### Improving the Performance of k-NN
+Computational Complexity - Naive k-NN
+Improving Computational Performance of k-NN with Data Structures based on memory and time taken for an algorithm.
