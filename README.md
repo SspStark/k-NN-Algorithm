@@ -155,7 +155,7 @@ Data Terminology
 - Feature: variable, attribute, dimension, predictor, covariate
 - Target: output, outcome, label/class(classification), ground truth
 - Prediction: Output from Model
-### Hand-On-k-NN
+### Hands-On-k-NN
 - [Working with MNIST Dataset](https://colab.research.google.com/drive/1C-i6nnbCs0Kx0g_mE5sYhz0GbMFjWekU)
 - [Handwritten Digit Recognition using k-NN](https://colab.research.google.com/drive/1JMVAty8vRY1AWNO-OBRCjptm2NifZtBi)
 - [Handwritten Digit Recognition using k-NN Solution](https://colab.research.google.com/drive/16_2O4dzRshPCYu5QHIh3zEGTWNhbNBU9)
