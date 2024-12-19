@@ -45,9 +45,16 @@ Nearest Neighbors:
 - To classify a new data point, the algorithm identifies the k training data points in the dataset that are closest to the new point based on a distance metric (commonly Euclidean distance).
 - We choose the most frequent target label among the target labels of the k nearest points.
 
-**Euclidean Distance**: Vector Notation
-- position can also be represented as a nD vector, [a1,a2,....,an] , [b1,b2,....,bn]
-- squareroot((a1-b1)^2 + (a2-b2)^2+........+(an-bn)^2)
+#### Euclidean Distance: Vector Notation
+
+The position of two points can be represented as n-dimensional vectors:  
+$$ \mathbf{a} = [a_1, a_2, \dots, a_n] \quad \text{and} \quad \mathbf{b} = [b_1, b_2, \dots, b_n] $$
+
+The Euclidean distance between these two vectors is given by the formula:
+
+$$ 
+d(\mathbf{a}, \mathbf{b}) = \sqrt{(a_1 - b_1)^2 + (a_2 - b_2)^2 + \dots + (a_n - b_n)^2}
+$$
 
 Majority Voting:
 - For classification, the algorithm assigns the class label that is most frequent among the k-nearest neighbors to the new data point. This is often referred to as majority voting.
