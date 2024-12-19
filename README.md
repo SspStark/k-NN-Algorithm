@@ -48,13 +48,11 @@ Nearest Neighbors:
 #### Euclidean Distance: Vector Notation
 
 The position of two points can be represented as n-dimensional vectors:  
-$$ \mathbf{a} = [a_1, a_2, \dots, a_n] \quad \text{and} \quad \mathbf{b} = [b_1, b_2, \dots, b_n] $$
+$\mathbf{a} = [a_1, a_2, \dots, a_n] \quad \text{and} \quad \mathbf{b} = [b_1, b_2, \dots, b_n]$
 
 The Euclidean distance between these two vectors is given by the formula:
 
-$$ 
-d(\mathbf{a}, \mathbf{b}) = \sqrt{(a_1 - b_1)^2 + (a_2 - b_2)^2 + \dots + (a_n - b_n)^2}
-$$
+$$d(\mathbf{a}, \mathbf{b}) = \sqrt{(a_1 - b_1)^2 + (a_2 - b_2)^2 + \dots + (a_n - b_n)^2}$$
 
 Majority Voting:
 - For classification, the algorithm assigns the class label that is most frequent among the k-nearest neighbors to the new data point. This is often referred to as majority voting.
