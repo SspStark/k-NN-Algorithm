@@ -139,7 +139,7 @@ k-NN Assumption
 Distance Measures
 - In high Dimensional spaces Euclidean Distance is not preferable based on researches done by ML researchers.
 - There are other ways of measuring distances b/w points to get better results, one is **Manhattan** or **L^1 Norm** distance.
-- Manhattan distance: a=[a1,a2,....an] & b=[b1,b2....bn] ==> |a1-b1|+|a2-b2|+....+|an-bn|
+- Manhattan distance: $$d(\mathbf{a}, \mathbf{b}) = |a_1 - b_1| + |a_2 - b_2| + \dots + |a_n - b_n|$$
 - others distance measures are *Minkowski or L^n Norm, Chebyshev* etc.
 - Minkowski distance: nth root(sum(|ai-bi| ^ n))
 - when n=1, it will become manhattan distance and n=2, it will become Euclidean distance.
